@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tech Pilot Education - Learn PC Tips, Microsoft Office, Typing, and more with Dev Prakash Varma. Explore video tutorials, practice exercises, and become a computer expert!">
+  <meta name="keywords" content="Tech Pilot Education, PC Tips, Microsoft Word, Excel, PowerPoint, Typing Practice, Hindi Typing, Windows 11, Computer Course, Online Learning, Computer Basics, Dev Prakash Varma, Computer Classes, Online Computer Education, Free Computer Courses, Learn Computer in Hindi, Computer Skills Training, Office Automation, Data Entry Course, Competitive Exam Computer Preparation">
+  <meta name="author" content="Dev Prakash Varma">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://techpiloteducation.com" />
+  
+  <title>Tech Pilot Education - Learn PC Tips & Office Skills | Dev Prakash Varma</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #3b82f6;
+      --primary-dark: #172554;
+      --secondary: #f4f7fe;
+      --accent: #ffcc00;
+      --accent-dark: #e6b800;
+      --text: #333;
+      --light-text: #555;
+      --white: #ffffff;
+      --shadow: 0 4px 20px rgba(0,0,0,0.1);
+      --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+      --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      background-color: var(--secondary);
+      color: var(--text);
+      animation: fadeIn 1s ease-in;
+      overflow-x: hidden;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--gradient);
+      padding: 1rem 2rem;
+      color: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: var(--transition);
+    }
+    
+    header.scrolled {
+      padding: 0.7rem 2rem;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    }
+    
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    header img {
+      height: 50px;
+      width: auto;
+      transition: var(--transition);
+      border-radius: 8px;
+    }
+    
+    header img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    }
+    
+    h1, h2, h3, h4 {
+      margin: 0;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+    
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.9rem; color: var(--primary-dark); }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.2rem; }
+    
+    section {
+      padding: 3rem 2rem;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--gradient);
+      color: white;
+      border-radius: 0 0 20px 20px;
+      margin-bottom: 3rem;
+      animation: fadeInDown 1s;
+    }
+    
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: white;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    .section-header h2 {
+      display: inline-block;
+      padding: 0 20px;
+      background: var(--secondary);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .section-header::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--primary-light), transparent);
+      z-index: 0;
+    }
+    
+    .highlight-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    
+    .highlight-item {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: var(--transition);
+      border-bottom: 4px solid var(--primary-light);
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .highlight-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient);
+      opacity: 0;
+      transition: var(--transition);
+      z-index: 0;
+    }
+    
+    .highlight-item:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-hover);
+    }
+    
+    .highlight-item:hover::before {
+      opacity: 0.05;
+    }
+    
+    .highlight-item i {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      transition: var(--transition);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .highlight-item:hover i {
+      transform: scale(1.1);
+      color: var(--primary-light);
+    }
+    
+    .highlight-item h3 {
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .highlight-item p {
+      color: var(--light-text);
+      font-size: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .course-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease, padding 0.4s ease;
+      background: rgba(244, 247, 254, 0.7);
+      border-radius: 10px;
+      margin-top: 0;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .course-detail.active {
+      max-height: 1000px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      animation: fadeIn 0.8s ease;
+    }
+    
+    .course-detail p {
+      margin-bottom: 1rem;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    
+    .course-detail p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .youtube-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background-color: #ff0000;
+      color: var(--white);
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: var(--transition);
+      box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+      margin: 1.5rem auto;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .youtube-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.5s;
+    }
+    
+    .youtube-link:hover {
+      background-color: #cc0000;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(255,0,0,0.4);
+    }
+    
+    .youtube-link:hover::before {
+      left: 100%;
+    }
+    
+    .youtube-link i {
+      font-size: 1.5rem;
+    }
+    
+    .social-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: var(--transition);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    .social-button:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    
+    .social-button.facebook {
+      background: #3b5998;
+    }
+    
+    .social-button.youtube {
+      background: #ff0000;
+    }
+    
+    .social-button.instagram {
+      background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    }
+    
+    .social-button.twitter {
+      background: #1da1f2;
+    }
+    
+    footer {
+      background: var(--gradient);
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 2rem;
+      margin-top: 3rem;
+      position: relative;
+    }
+    
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark), var(--accent));
+    }
+    
+    .footer-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .about-me {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .contact-info {
+      margin-bottom: 2rem;
+    }
+    
+    .contact-info p {
+      margin: 0.8rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .social-links {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .keywords {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+    
+    .copyright {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    /* YouTube Videos Section */
+    .video-gallery {
+      background: var(--white);
+      padding: 3rem 2rem;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      margin: 3rem auto;
+    }
+    
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 2rem;
+    }
+    
+    .video-item {
+      background: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .video-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+    
+    .video-thumbnail {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      cursor: pointer;
+    }
+    
+    .video-thumbnail img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .video-thumbnail iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    .video-play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background-color: rgba(255, 0, 0, 0.8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .video-play-icon i {
+      color: white;
+      font-size: 1.5rem;
+      margin-left: 5px;
+    }
+    
+    .video-info {
+      padding: 1.2rem;
+    }
+    
+    .video-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--primary-dark);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .video-meta {
+      display: flex;
+      justify-content: space-between;
+      color: var(--light-text);
+      font-size: 0.9rem;
+    }
+    
+    /* FAQ Section */
+    .faq-section {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin: 3rem auto;
+      max-width: 900px;
+    }
+    
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1.5rem;
+    }
+    
+    .faq-item:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    
+    .faq-question {
+      font-weight: 600;
+      color: var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+    }
+    
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: var(--primary);
+      transition: transform 0.3s ease;
+    }
+    
+    .faq-question.active::after {
+      content: '-';
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      color: var(--light-text);
+    }
+    
+    .faq-answer.active {
+      max-height: 500px;
+      padding-top: 1rem;
+    }
+    
+    /* Testimonials */
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .testimonial {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    
+    .testimonial::before {
+      content: '"';
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      font-size: 4rem;
+      color: rgba(59, 130, 246, 0.1);
+      font-family: serif;
+    }
+    
+    .testimonial-content {
+      margin-bottom: 1.5rem;
+      font-style: italic;
+      color: var(--light-text);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .testimonial-author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .author-info h4 {
+      color: var(--primary-dark);
+      margin-bottom: 0.2rem;
+    }
+    
+    .author-info p {
+      color: var(--light-text);
+      font-size: 0.9rem;
+    }
+    
+    /* Contact Form */
+    .contact-form {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      max-width: 600px;
+      margin: 3rem auto;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary-light);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    }
+    
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
+    .submit-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: var(--transition);
+      width: 100%;
+    }
+    
+    .submit-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+    
+    /* Cookie Consent */
+    .cookie-consent {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--primary-dark);
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .cookie-consent.show {
+      transform: translateY(0);
+    }
+    
+    .cookie-consent p {
+      margin-bottom: 1rem;
+      flex: 1 1 100%;
+    }
+    
+    .cookie-buttons {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    
+    .cookie-btn {
+      padding: 0.5rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    
+    .cookie-accept {
+      background: var(--accent);
+      color: var(--text);
+      border: none;
+    }
+    
+    .cookie-decline {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+      }
+      
+      .logo-container {
+        margin-bottom: 1rem;
+      }
+      
+      section {
+        padding: 2rem 1.5rem;
+      }
+      
+      .hero {
+        padding: 3rem 1.5rem;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.6rem; }
+      h3 { font-size: 1.3rem; }
+      
+      .highlight-box,
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .highlight-item,
+      .video-item {
+        padding: 1.5rem;
+      }
+      
+      .cookie-consent {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .cookie-buttons {
+        justify-content: center;
+      }
+    }
+    
+    /* Accessibility improvements */
+    [tabindex]:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+    
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  </style>
+</head>
+<body>
+  <header id="main-header">
+    <div class="logo-container">
+      <a href="index.html" aria-label="Refresh page"><img src="logo.png" alt="Tech Pilot Education Logo"></a>
+      <h1>Tech Pilot Education</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="animate__animated animate__fadeInDown">Master Computer Skills with Tech Pilot</h1>
+      <p class="animate__animated animate__fadeInUp animate__delay-1s">Learn PC Tips, Microsoft Office, Typing, and more with Dev Prakash Varma</p>
+      <a href="https://youtube.com/@tech_pilot-07" target="_blank" class="youtube-link animate__animated animate__pulse animate__delay-2s animate__infinite" aria-label="Visit our YouTube channel">
+        <i class="fab fa-youtube"></i>
+        <span>Visit YouTube Channel</span>
+      </a>
+    </section>
+
+    <section class="highlights">
+      <div class="section-header">
+        <h2><i class="fas fa-star"></i> Website Highlights</h2>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-item" tabindex="0" onclick="toggleDetails('highlight1')" onkeydown="handleKeyPress(event, 'highlight1')">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Expert-led PC Courses</h3>
+          <p>Learn from Dev Prakash Varma through structured video lessons.</p>
+          <div class="course-detail" id="highlight1">
+            <p>Our PC courses are carefully designed by Dev Prakash Varma, a seasoned computer expert with years of teaching experience. The courses follow a structured curriculum that takes you from absolute beginner to proficient user through carefully sequenced video lessons. Each module builds upon the previous one, ensuring a smooth learning curve.</p>
+            <p>The content covers all essential aspects of personal computing including hardware basics, operating system navigation, file management, internet safety, and productivity tools. What sets our courses apart is the practical approach - every concept is demonstrated with real-world examples and accompanied by practice exercises. You'll learn not just what to do, but why it works that way.</p>
+            <p>Dev Prakash's teaching style emphasizes clarity and engagement, breaking down complex topics into digestible chunks. The courses are updated quarterly to reflect the latest technological developments and software updates. Whether you're preparing for competitive exams, job interviews, or just want to be more tech-savvy, these courses provide the perfect foundation.</p>
+            <p>Additional features include downloadable cheat sheets, troubleshooting guides, and a community forum where you can ask questions and get personalized help. The courses are designed to be accessible to Hindi-speaking audiences as well, with bilingual explanations for technical terms.</p>
+          </div>
+        </div>
+        <div class="highlight-item" tabindex="0" onclick="toggleDetails('highlight2')" onkeydown="handleKeyPress(event, 'highlight2')">
+          <i class="fab fa-youtube"></i>
+          <h3>Free YouTube Tutorials</h3>
+          <p>Completely free courses accessible anytime, anywhere.</p>
+          <div class="course-detail" id="highlight2">
+            <p>Our YouTube channel offers a wealth of completely free computer education resources available 24/7. Unlike many platforms that gate content behind paywalls, we believe in democratizing computer education. The channel features over 200 tutorials covering everything from basic computer operations to advanced software techniques.</p>
+            <p>The tutorials are organized into playlists by topic and difficulty level, making it easy to find content matching your current skill level. Each video is professionally edited with clear visuals, on-screen annotations, and closed captions for better understanding. We use a practical, project-based approach where you'll build real documents, spreadsheets, and presentations as you learn.</p>
+            <p>New content is added weekly based on viewer requests and emerging technology trends. Popular series include "Windows Tips Tuesday" and "Office Productivity Hacks". The channel has helped thousands of students, job seekers, and professionals improve their computer skills without spending money on expensive courses.</p>
+            <p>Community engagement is a key feature - viewers can comment with questions and often get personal responses from Dev Prakash himself. Many tutorials include practice files that viewers can download from the video description to follow along. The channel has become particularly popular among Hindi-speaking audiences for its clear explanations of technical concepts in both English and Hindi.</p>
+          </div>
+        </div>
+        <div class="highlight-item" tabindex="0" onclick="toggleDetails('highlight3')" onkeydown="handleKeyPress(event, 'highlight3')">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Easy Tips & Tricks</h3>
+          <p>Boost productivity with simple, effective computer hacks.</p>
+          <div class="course-detail" id="highlight3">
+            <p>Our tips and tricks section is packed with actionable advice that can immediately improve your computer productivity. These aren't just random shortcuts, but carefully curated techniques that Dev Prakash has tested and refined through years of teaching and personal use. The tips cover all major operating systems and applications.</p>
+            <p>You'll learn keyboard shortcuts that can save hours of mouse work, hidden features in common software, automation techniques to streamline repetitive tasks, and system optimization tricks to keep your computer running smoothly. The tips are organized by category (Windows, Office, Internet, etc.) and rated by difficulty level.</p>
+            <p>What makes our tips special is the explanation of why each trick works, helping you understand the underlying principles so you can adapt them to your specific needs. Many tips come with video demonstrations showing before-and-after comparisons of using versus not using the technique.</p>
+            <p>We also feature "Tip of the Week" videos that highlight one particularly useful trick in detail. These have become some of our most popular content, with viewers reporting significant time savings in their daily computer use. The tips are especially valuable for office workers, students, and anyone who spends considerable time on computers.</p>
+          </div>
+        </div>
+        <div class="highlight-item" tabindex="0" onclick="toggleDetails('highlight4')" onkeydown="handleKeyPress(event, 'highlight4')">
+          <i class="fas fa-language"></i>
+          <h3>Hindi & English</h3>
+          <p>Content available in Hindi for better understanding.</p>
+          <div class="course-detail" id="highlight4">
+            <p>Recognizing that many Indian learners are more comfortable with Hindi, we've created bilingual content that explains technical concepts in clear Hindi while maintaining accuracy. Technical terms are introduced in English with Hindi explanations, helping bridge the language gap that often makes computer learning challenging.</p>
+            <p>Our Hindi content isn't just translated - it's culturally adapted with examples relevant to Indian users. This includes tutorials on Hindi typing, government form filling, and regional software applications. The Hindi explanations are particularly detailed for foundational concepts, ensuring no one gets left behind due to language barriers.</p>
+            <p>We've developed a unique teaching methodology that code-switches between English and Hindi as needed, using English for technical terms that are universally recognized in the IT world while providing Hindi explanations for concepts. This approach has proven especially effective for adult learners and those from non-technical backgrounds.</p>
+            <p>The channel also features some content in "Hinglish" - a mix of Hindi and English that many Indian viewers find more relatable and easier to understand for technical topics. Viewer feedback indicates this approach significantly reduces the intimidation factor often associated with learning computer skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-courses">
+      <div class="section-header">
+        <h2><i class="fas fa-graduation-cap"></i> Popular Courses</h2>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-item" tabindex="0" onclick="toggleDetails('course1')" onkeydown="handleKeyPress(event, 'course1')">
+          <i class="fas fa-desktop"></i>
+          <h3>Basic Computer Skills</h3>
+          <p>Start your computer journey here.</p>
+          <div class="course-detail" id="course1">
+            <p>This comprehensive beginner's course is designed to take someone with zero computer knowledge to comfortable user status. It starts with the absolute basics: how to power on/off a computer properly, use input devices like mouse and keyboard, and understand basic terminology. The course then progresses through fundamental operations like creating and managing files/folders, using removable storage, and basic system settings.</p>
+            <p>A unique feature is our "Computer Anatomy" module that explains what each hardware component does in simple terms, helping users understand their machines better. The internet section covers safe browsing practices, creating strong passwords, and avoiding common online scams - crucial knowledge in today's digital world.</p>
+            <p>The course includes special troubleshooting modules for common problems like frozen applications, printer issues, and internet connectivity problems. Each lesson concludes with practical exercises that reinforce the skills learned. By course end, students can comfortably perform all basic computing tasks needed for daily life or entry-level office work.</p>
+            <p>We've had particular success with older learners and those returning to the workforce who need to build digital literacy. The course moves at a gentle pace with plenty of repetition and real-world analogies to make concepts stick. Many graduates report feeling more confident about technology in general after completing this foundation.</p>
+          </div>
+        </div>
+        <div class="highlight-item" tabindex="0" onclick="toggleDetails('course2')" onkeydown="handleKeyPress(event, 'course2')">
+          <i class="fab fa-windows"></i>
+          <h3>Windows 11 Mastery</h3>
+          <p>Unlock the power of your PC.</p>
+          <div class="course-detail" id="course2">
+            <p>Our Windows 11 course goes far beyond the basics to explore the full potential of Microsoft's latest operating system. The curriculum begins with installation and setup guidance, then progresses through customization, productivity features, and advanced management tools. You'll learn how to personalize your Start menu and taskbar for maximum efficiency, use virtual desktops to organize workspaces, and master the new Snap Layouts for window management.</p>
+            <p>The course dedicates significant time to security features like Windows Hello, BitLocker encryption, and Microsoft Defender. We cover often-overlooked utilities like PowerToys, clipboard history, and the revamped Microsoft Store. Advanced modules explore registry editing (safely), Group Policy settings, and automation through PowerShell scripting basics.</p>
+            <p>A standout feature is our "Optimization" section that teaches how to speed up a sluggish PC, manage startup programs, and troubleshoot common performance issues. The course also compares Windows 11 with previous versions, highlighting key differences that affect daily use.</p>
+            <p>Practical projects include creating a customized development environment, setting up a home network, and configuring parental controls. By completion, students can navigate Windows 11 like power users, leveraging features most people never discover on their own.</p>
+          </div>
+        </div>
+        <div class="highlight-item" tabindex="0" onclick="toggleDetails('course3')" onkeydown="handleKeyPress(event, 'course3')">
+          <i class="fas fa-file-word"></i>
+          <h3>MS Office Professional</h3>
+          <p>Create documents and manage data like a pro.</p>
+          <div class="course-detail" id="course3">
+            <p>This intensive Office course covers Word, Excel, and PowerPoint to professional competency levels. The Word section begins with document creation basics but quickly progresses to advanced formatting, styles, templates, and collaboration features. You'll learn to create complex documents like reports with automatic tables of contents, academic papers with citations, and mail merges for bulk communications.</p>
+            <p>The Excel curriculum is particularly robust, starting with basic spreadsheet navigation and advancing through functions, pivot tables, data analysis tools, and basic macros. Real-world projects include creating dynamic budgets, inventory trackers, and dashboard reports. We emphasize formula efficiency and best practices that prevent common spreadsheet errors.</p>
+            <p>PowerPoint modules teach not just slide creation but effective presentation design principles, animation timing, and presenter tools. The course includes a unique "Office Integration" section showing how to combine applications - embedding Excel charts in Word reports or PowerPoint presentations, for example.</p>
+            <p>All lessons use practical examples relevant to business, education, and personal use. The course prepares students for Microsoft Office certification exams while also teaching real-world skills immediately applicable in workplace settings. Many students report significant productivity gains within weeks of starting the course.</p>
+          </div>
+        </div>
+        <div class="highlight-item" tabindex="0" onclick="toggleDetails('course4')" onkeydown="handleKeyPress(event, 'course4')">
+          <i class="fas fa-keyboard"></i>
+          <h3>Typing Master Program</h3>
+          <p>Boost your Hindi/English typing speed.</p>
+          <div class="course-detail" id="course4">
+            <p>Our Typing Master program is a comprehensive typing improvement system suitable for complete beginners through advanced users wanting to increase speed. The course begins with proper finger placement and posture to prevent fatigue and injury. Interactive exercises gradually introduce keys while building muscle memory through structured repetition.</p>
+            <p>The English typing curriculum uses scientifically designed drills that focus on common letter combinations, progressing from home row outward. Speed-building modules include timed tests with instant feedback on accuracy and words-per-minute. Advanced sections cover special characters, number pads, and transcription techniques.</p>
+            <p>The Hindi typing component teaches both Remington and Mangal keyboard layouts, with a focus on government and academic use cases. Students practice with actual document examples like application forms and official letters. Unique to our program is the "Bilingual Typing" module that helps those who need to switch frequently between English and Hindi.</p>
+            <p>The course includes specialized training for competitive exam aspirants, with practice sets modeled on actual test patterns. Many students report doubling their typing speed within weeks while maintaining or improving accuracy. The program is particularly popular among data entry professionals, writers, and students preparing for computer-based tests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube Videos Section -->
+    <section class="video-gallery">
+      <div class="section-header">
+        <h2><i class="fab fa-youtube"></i> Latest Video Tutorials</h2>
+        <p>Click on any thumbnail to play the video</p>
+      </div>
+      
+      <div class="video-grid">
+        <!-- Video Item 1 -->
+        <div class="video-item">
+          <div class="video-thumbnail" onclick="playVideo(this, 'zE5jNPAK4mg')">
+            <img src="https://img.youtube.com/vi/zE5jNPAK4mg/maxresdefault.jpg" alt="Windows 11 Tips">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Customize Folder Icons LIKE A PRO in Windows 10/11!</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 25K views</span>
+              <span><i class="fas fa-calendar-alt"></i> 2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video Item 2 -->
+        <div class="video-item">
+          <div class="video-thumbnail" onclick="playVideo(this, 'edm0gtnuXrA')">
+            <img src="https://img.youtube.com/vi/edm0gtnuXrA/maxresdefault.jpg" alt="Excel Formulas">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">5 hidden Windows features you should be using in 2025</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 18K views</span>
+              <span><i class="fas fa-calendar-alt"></i> 3 weeks ago</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video Item 3 -->
+        <div class="video-item">
+          <div class="video-thumbnail" onclick="playVideo(this, '46-vD0c3Xhc')">
+            <img src="https://img.youtube.com/vi/46-vD0c3Xhc/maxresdefault.jpg" alt="Hindi Typing">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">🚀 Get Your Windows PC Back To Speed 🔥: Simple Tips || Tech Pilot</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 32K views</span>
+              <span><i class="fas fa-calendar-alt"></i> 1 month ago</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video Item 4 -->
+        <div class="video-item">
+          <div class="video-thumbnail" onclick="playVideo(this, 'fL1VnMHTC4o')">
+            <img src="https://img.youtube.com/vi/fL1VnMHTC4o/maxresdefault.jpg" alt="Windows Productivity">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">🔥Want to boost your productivity and navigate Windows like a pro 😎? for win 10/11 || Tech Pilot</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 32K views</span>
+              <span><i class="fas fa-calendar-alt"></i> 1 month ago</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video Item 5 -->
+        <div class="video-item">
+          <div class="video-thumbnail" onclick="playVideo(this, 'nMyrOFEr1M8')">
+            <img src="https://img.youtube.com/vi/nMyrOFEr1M8/maxresdefault.jpg" alt="Keyboard Shortcuts">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">🚀 Master Windows Keyboard Shortcuts | Boost Speed & Efficiency! (Work Faster & Smarter) Tech Pilot</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 15K views</span>
+              <span><i class="fas fa-calendar-alt"></i> 1 month ago</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video Item 6 (New) -->
+        <div class="video-item">
+          <div class="video-thumbnail" onclick="playVideo(this, 'jdoYjebZ6Z4')">
+            <img src="https://img.youtube.com/vi/jdoYjebZ6Z4/maxresdefault.jpg" alt="Faster Internet">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Faster Internet Without Paying More! 🤯 win 10/11. Tech Pilot</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 10K views</span>
+              <span><i class="fas fa-calendar-alt"></i> 1 week ago</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video Item 7 (New) -->
+        <div class="video-item">
+          <div class="video-thumbnail" onclick="playVideo(this, 'TgLnCX3HdV4')">
+            <img src="https://img.youtube.com/vi/TgLnCX3HdV4/maxresdefault.jpg" alt="AI Technology">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">AI Takes Over! 🤖 The Future of Humanity & Technology | Must-Watch Sci-Fi Short 🚀" Tech Pilot</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 20K views</span>
+              <span><i class="fas fa-calendar-alt"></i> 3 days ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="section-header">
+        <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          Are these courses really free?
+        </div>
+        <div class="faq-answer">
+          <p>Yes! All our YouTube tutorials and course materials are completely free to access. We believe in making computer education accessible to everyone regardless of their financial situation. There are no hidden charges or premium paywalls - what you see is what you get, and it's all free.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          Do I need any prior computer knowledge?
+        </div>
+        <div class="faq-answer">
+          <p>Not at all! Our courses are designed for absolute beginners. We start from the very basics like "how to turn on a computer" and progress gradually. Even if you've never touched a computer before, our structured lessons will guide you step by step to computer literacy.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          How are these courses different from others?
+        </div>
+        <div class="faq-answer">
+          <p>Our courses stand out in three key ways: 1) Bilingual instruction that makes technical concepts clear for Hindi speakers, 2) Practical focus with real-world examples rather than just theory, and 3) Dev Prakash's unique teaching style that breaks down complex topics into simple, digestible lessons.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          Can I get a certificate after completing courses?
+        </div>
+        <div class="faq-answer">
+          <p>Currently, we don't offer formal certificates for our free YouTube courses as they are designed for skill-building rather than certification. However, we're working on a certification program for our premium courses (coming soon) that will include assessments and verifiable certificates.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          How often is new content added?
+        </div>
+        <div class="faq-answer">
+          <p>We add new content every week! Our regular schedule includes: Tuesday Tips (short productivity videos), Friday Fundamentals (in-depth tutorials), and monthly "Ask Dev" sessions where we answer viewer questions. We also create special series based on trending topics and viewer requests.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section>
+      <div class="section-header">
+        <h2><i class="fas fa-comments"></i> What Our Students Say</h2>
+      </div>
+      
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "Tech Pilot's Basic Computer Course changed my life! At 45, I was scared of computers but needed skills for a job. Dev Sir explains so clearly in Hindi and English. Now I work as a data entry operator thanks to these free lessons."
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Rekha Sharma">
+            <div class="author-info">
+              <h4>Rekha Sharma</h4>
+              <p>Data Entry Operator, Delhi</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "The Windows 11 tutorials helped me optimize my laptop perfectly. I learned so many hidden features I never knew existed. Now I help all my friends and family with their computer problems too!"
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amit Patel">
+            <div class="author-info">
+              <h4>Amit Patel</h4>
+              <p>College Student, Mumbai</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "As a small business owner, the Excel tutorials saved me hours every week. The pivot table and formula videos helped me organize my inventory and finances better than any paid software. Highly recommended!"
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Gupta">
+            <div class="author-info">
+              <h4>Priya Gupta</h4>
+              <p>Shop Owner, Bangalore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section>
+      <div class="section-header">
+        <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+      </div>
+      
+      <div class="contact-form">
+        <form id="contactForm" onsubmit="sendEmail(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a topic</option>
+              <option value="course">Course Inquiry</option>
+              <option value="technical">Technical Support</option>
+              <option value="feedback">Feedback/Suggestions</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="about-me">
+        <p>Hello viewers! 👋</p>
+        <p>I am Dev Prakash Varma from India 🇮🇳.</p>
+        <p>Welcome to Tech Pilot Education, your go-to channel for technical knowledge, computer tips, and the latest tech insights! 💻🚀</p>
+        <p>I have a strong understanding of computers and technology, and I'm here to simplify complex tech concepts for you.</p>
+        <p>Stay tuned for informative videos, tutorials, and exciting tech content! Don't forget to subscribe and join me on this journey of learning and innovation.</p>
+        <p>🔔 Subscribe now and become a tech pilot! 🚀</p>
+      </div>
+      
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-user" aria-hidden="true"></i> <strong>Instructor:</strong> Dev Prakash Varma</p>
+        <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> thetechpilot600@gmail.com</p>
+        <p><i class="fas fa-phone" aria-hidden="true"></i> <strong>Mobile:</strong> +91 9934713368</p>
+      </div>
+      
+      <div class="social-links">
+        <h3>Connect With Us</h3>
+        <p style="margin-bottom: 1rem;">Follow us on social media for updates and tips</p>
+        <div>
+          <a href="https://youtube.com/@tech_pilot-07" target="_blank" class="social-button youtube" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://facebook.com/profile.php?id=61573556319904" target="_blank" class="social-button facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-button twitter" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-button instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="keywords">
+        <p><strong>Keywords:</strong> Tech Pilot Education, PC Tips, Windows 11, MS Word, Excel Formulas, Typing Lessons, Learn Computer in Hindi, Tech Pilot, Dev Prakash Varma Computer Classes, Office Skills Training, Online Computer Tutorials, Computer Basics Course, Hindi Typing Master, PowerPoint Presentation Skills, Data Entry Course, Computer Literacy Program, Free Computer Education, Online Learning Platform, Digital Skills Training, Competitive Exam Computer Preparation, Computer Shortcut Keys, Microsoft Office Tutorials, Basic Computer Knowledge, Computer Fundamentals</p>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; <span id="year"></span> Tech Pilot Education. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-consent" id="cookieConsent">
+    <p>We use cookies to ensure you get the best experience on our website. By continuing to use our site, you accept our use of cookies.</p>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accept</button>
+      <button class="cookie-btn cookie-decline" onclick="declineCookies()">Decline</button>
+    </div>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Toggle details with animation - improved to close others when one opens
+    function toggleDetails(id) {
+      // Close all other open details first
+      document.querySelectorAll('.course-detail.active').forEach(item => {
+        if (item.id !== id) {
+          item.classList.remove('active');
+          const button = document.querySelector(`[onclick="toggleDetails('${item.id}')"]`);
+          button.setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Toggle the clicked one
+      const detail = document.getElementById(id);
+      detail.classList.toggle('active');
+      
+      // Update ARIA attributes
+      const button = document.querySelector(`[onclick="toggleDetails('${id}')"]`);
+      const isExpanded = detail.classList.contains('active');
+      button.setAttribute('aria-expanded', isExpanded);
+      
+      // Smooth scroll to keep item in view when opened
+      if (isExpanded) {
+        setTimeout(() => {
+          detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      }
+    }
+    
+    // Handle keyboard events for accessibility
+    function handleKeyPress(event, id) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleDetails(id);
+      }
+    }
+    
+    // FAQ toggle function
+    function toggleFAQ(element) {
+      const answer = element.nextElementSibling;
+      element.classList.toggle('active');
+      answer.classList.toggle('active');
+    }
+    
+    // Cookie consent functions
+    function acceptCookies() {
+      document.getElementById('cookieConsent').classList.remove('show');
+      localStorage.setItem('cookieConsent', 'accepted');
+    }
+    
+    function declineCookies() {
+      document.getElementById('cookieConsent').classList.remove('show');
+      localStorage.setItem('cookieConsent', 'declined');
+    }
+    
+    // Show cookie consent if not already set
+    document.addEventListener('DOMContentLoaded', function() {
+      if (!localStorage.getItem('cookieConsent')) {
+        setTimeout(() => {
+          document.getElementById('cookieConsent').classList.add('show');
+        }, 2000);
+      }
+      
+      // Add intersection observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      // Observe all highlight items
+      document.querySelectorAll('.highlight-item').forEach(item => {
+        observer.observe(item);
+      });
+      
+      // Observe testimonials
+      document.querySelectorAll('.testimonial').forEach(item => {
+        observer.observe(item);
+      });
+    });
+    
+    // Video play function
+    function playVideo(thumbnailElement, videoId) {
+      // Replace the thumbnail with the YouTube iframe player
+      thumbnailElement.innerHTML = `
+        <iframe 
+          src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      `;
+      
+      // Update the clicked video item to maintain aspect ratio
+      const videoItem = thumbnailElement.closest('.video-item');
+      videoItem.style.transition = 'none'; // Disable hover effect during playback
+      videoItem.querySelector('.video-info').style.display = 'none'; // Hide info during playback
+    }
+    
+    // Contact form submission
+    function sendEmail(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      // In a real implementation, you would use a server-side script or email service
+      // For now, we'll simulate the email sending with a mailto link
+      const mailtoLink = `mailto:thetechpilot600@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+      )}`;
+      
+      window.location.href = mailtoLink;
+      
+      // Show success message
+      alert('Thank you for your message! We will get back to you soon.');
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>
